@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+     <title>JS basics</title>
+     <link rel="stylesheet" href="main.css">
+     <style>
+          .box {
+               margin: auto;
+               width: 500px;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -30%);
+               display: grid;
+               grid-template-columns: 3fr 3fr 3fr;
+          }
+
+          button {
+               margin: 40px;
+               padding: 10px;
+               border: 3px solid #000;
+               cursor: pointer;
+               color: black;
+               font-size: 20px;
+               background-color: #5C4036;
+               width: 80px;
+               height: 50px;
+               color: white;
+               border-radius: 10px;
+          }
+
+          .heading {
+               text-align: center;
+
+          }
+
+          h3 {
+               /* width: inline; */
+               margin: 0px auto;
+               padding: 30px;
+               border: 2px solid black;
+               border-radius: 20px;
+
+          }
+
+          .player {
+               display: flex;
+               justify-content: space-between;
+               width: 50%;
+               margin: 0px auto;
+               /* background-color: blanchedalmond; */
+          }
+
+          .note {
+               width: 100px;
+               position: fixed;
+               top: 20px;
+               right: 30px;
+               display: flex;
+               /* background-color: green; */
+               text-align: center;
+          }
+
+          .color {
+               width: 20px;
+               height: 20px;
+               background-color: #1B51A8;
+          }
+     </style>
+
+
+</head>
+
+<body>
+
+
+     <div class="heading">
+          <h2>Tic-Tac-Toe</h2>
+          <div class="player">
+               <h3 id="p1">Player One</h3>
+               <h3 id="p2">Player Two</h3>
+          </div>
+     </div>
+
+     <div class="box">
+          <button id="1"></button>
+          <button id="2"></button>
+          <button id="3"></button>
+          <button id="4"></button>
+          <button id="5"></button>
+          <button id="6"></button>
+          <button id="7"></button>
+          <button id="8"></button>
+          <button id="9"></button>
+     </div>
+
+
+     <div class="note">
+          <h4 class="color"></h4>
+          <h4>current Player</h4>
+     </div>
+     <script src="main.js"></script>
+</body>
+
+
+
+</html>
